@@ -1,0 +1,40 @@
+{% extends 'layout/base.html' %}
+
+
+{% block css %}
+    
+{% endblock css %}
+    
+
+{% block body %}
+    <div class="container my-3" style="margin-top: 6em !important;">
+        <div class="row">
+            <div class="card col-lg-8 mx-auto">
+                <div class="card-body">
+                    <h1>Order</h1>
+                    <form action="#">
+                        <div class="mb-3">
+                            <label for="nameInput" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="nameInput" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailInput" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="addInput" class="form-label">Address</label>
+                            <textarea class="form-control" id="AddInput" cols="30" rows="6"></textarea>
+                        </div>
+                        <a class="btn btn-primary" href="#">Order</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock body %}
+    
+
+{% block js %}
+    
+{% endblock js %}
+    
