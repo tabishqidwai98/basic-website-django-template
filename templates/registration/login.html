@@ -14,16 +14,10 @@
                     <div class="card-body">
                         <h3 class="card-title text-center">Log In</h3>
                         <p class="card-text">
-                            <form action="">
-                                <div class="mb-3">
-                                    <label for="name">E-Mail</label>
-                                    <input type="email" class="form-control"> 
-                                </div> 
-                                <div class="mb-3">
-                                    <label for="psw">Password</label>
-                                    <input type="password" class="form-control"> 
-                                </div> 
-                                <a class="btn btn-primary" href="#">Log In</a>
+                            <form method="post">
+                                {% csrf_token %}
+                                {{form.as_p}} 
+                                <button>submit</button>
                             </form>
                         </p>
                         <span class="float-right">Dont have a account? <a href="/Signup">Sign Up</a></span>

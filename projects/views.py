@@ -3,21 +3,14 @@ from django.shortcuts import render
 # Create your views here.
 
 def homeview(request):
-    context = {}
-    return render(request, 'index.html', context)
+    return render(request, 'index.html')
 
 def termsview(request):
-    context = {}
-    return render(request, 'terms.html', context)
+    return render(request, 'terms.html')
 
 def orderview(request):
     context = {}
     return render(request, 'order.html', context)
 
-def signupview(request):
-    context = {}
-    return render(request, 'signup.html', context)
-
-def loginview(request):
-    context = {}
-    return render(request, 'login.html', context)
+def dashboardview(request):
+    return render(request, 'users/dashboard.html')
