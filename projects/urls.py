@@ -1,5 +1,5 @@
 from django.urls import path, include
-from .views import homeview,termsview,orderview,dashboardview
+from .views import homeview,termsview,orderview,dashboardview,register
 
 urlpatterns = [
     path('',homeview,name='home'),
